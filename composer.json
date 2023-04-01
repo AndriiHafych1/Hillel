@@ -1,0 +1,19 @@
+{
+    "name": "hafych/php_pro",
+    "type": "project",
+    "require": {
+        "monolog/monolog": "3.*"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "andrii\\PhpPro\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Andrii Hafych"
+        }
+    ],
+    "minimum-stability": "stable"
+}
