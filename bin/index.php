@@ -11,7 +11,7 @@ $data = new DataHandler("$storage");
 
 
 echo "If you want to create short URL pres 1. If you want convert short URL to regular press 2".PHP_EOL;
-
+echo 123;
 $choice = fgetc(STDIN);
 try {
     switch ($choice){
