@@ -12,11 +12,11 @@ class UrlEncoder implements IUrlEncoder
     private UrlValidator $validator;
     private ConvertUrl $convertUrl;
 
-    public function __construct(IDataHandler $dataHandler)
+    public function __construct(IDataHandler $dataHandler, UrlValidator $validator, ConvertUrl $convertUrl)
     {
         $this->dataHandler = $dataHandler;
-        $this->validator = new UrlValidator();
-        $this->convertUrl = new ConvertUrl();
+        $this->validator = $validator;
+        $this->convertUrl = $convertUrl;
     }
 
 

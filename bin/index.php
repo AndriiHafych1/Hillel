@@ -1,5 +1,4 @@
 <?php
-echo 123123;
 use andrii\PhpPro\url\{DataHandler, UrlDecoder, UrlEncoder};
 
 require_once __DIR__ . '/../vendor/autoload.php';
@@ -15,7 +14,7 @@ $choice = fgetc(STDIN);
 try {
     switch ($choice){
         case 1:
-            $create = new UrlEncoder($data);
+            $create = new UrlEncoder($data, new \andrii\PhpPro\url\UrlValidator(), new \andrii\PhpPro\url\ConvertUrl());
             echo 'Please write your URL'.PHP_EOL;
             $url = readline();
             $create->encode($url);
